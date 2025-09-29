@@ -33,20 +33,21 @@ const CategoryPanel = (props) => {
       <div className='scroll'>
         <ul className='w-full'>
           <li className='list-none relative flex-col'>
-            <Link to='/' className='w-full'>
+            <Link to='/' className='w-full '>
               <Button className='w-full !text-left !justify-start !px-3 !text-black'>Fashion</Button>
-            </Link>
-            {submenuIndex === 0 ? (
+              {submenuIndex === 0 ? (
              <FaRegSquareMinus
-             className=" cursor-pointer justify-between"
+             className=" cursor-pointer justify-end"
             onClick={() => openSubmenu(0)}
            />
             ) : (
           <FaRegPlusSquare
-          className=" cursor-pointer"
+          className=" cursor-pointer justify-end"
          onClick={() => openSubmenu(0)}
          />
            )}
+            </Link>
+            
             {submenuIndex === 0 && (
               <li className='list-none relative mb-1'>
                 <ul className='submenu  pl-3'>
