@@ -33,21 +33,20 @@ const CategoryPanel = (props) => {
       <div className='scroll'>
         <ul className='w-full'>
           <li className='list-none relative flex-col'>
-            <Link to='/' className='w-full '>
+            <Link to='/' className='w-full'>
               <Button className='w-full !text-left !justify-start !px-3 !text-black'>Fashion</Button>
-              {submenuIndex === 0 ? (
+            </Link>
+            {submenuIndex === 0 ? (
              <FaRegSquareMinus
-             className=" cursor-pointer justify-end"
+             className="absolute top-[10px] right-[15px] cursor-pointer"
             onClick={() => openSubmenu(0)}
            />
             ) : (
           <FaRegPlusSquare
-          className=" cursor-pointer justify-end"
+          className="absolute top-[10px] right-[15px] cursor-pointer"
          onClick={() => openSubmenu(0)}
          />
            )}
-            </Link>
-            
             {submenuIndex === 0 && (
               <li className='list-none relative mb-1'>
                 <ul className='submenu  pl-3'>
@@ -57,11 +56,11 @@ const CategoryPanel = (props) => {
                     </Link>
                     {innerSubmenuIndex === 0 ? (
                     <FaRegSquareMinus
-                     className=" cursor-pointer" onClick={() => openInnerSubmenu(0)}
+                     className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openInnerSubmenu(0)}
                     />
                   ) : (
               <FaRegPlusSquare
-              className=" cursor-pointer"
+              className="absolute top-[10px] right-[15px] cursor-pointer"
               onClick={() => openInnerSubmenu(0)}
            />
            )}
@@ -103,12 +102,12 @@ const CategoryPanel = (props) => {
             </Link>
             {submenuIndex === 1 ? (
              <FaRegSquareMinus
-             className=" cursor-pointer flex-col"
+             className="absolute top-[10px] right-[15px] cursor-pointer flex-col"
             onClick={() => openSubmenu(1)}
            />
             ) : (
           <FaRegPlusSquare
-          className=" cursor-pointer"
+          className="absolute top-[10px] right-[15px] cursor-pointer"
          onClick={() => openSubmenu(1)}
          />
            )}
@@ -121,11 +120,11 @@ const CategoryPanel = (props) => {
                     </Link>
                     {innerSubmenuIndex === 1 ? (
                     <FaRegSquareMinus
-                     className="cursor-pointer" onClick={() => openInnerSubmenu(0)}
+                     className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openInnerSubmenu(0)}
                     />
                   ) : (
               <FaRegPlusSquare
-              className=" cursor-pointer"
+              className="absolute top-[10px] right-[15px] cursor-pointer"
               onClick={() => openInnerSubmenu(1)}
            />
            )}
@@ -165,12 +164,12 @@ const CategoryPanel = (props) => {
             </Link>
             {submenuIndex === 2 ? (
              <FaRegSquareMinus
-             className=" cursor-pointer flex-col"
+             className="absolute top-[10px] right-[15px] cursor-pointer flex-col"
             onClick={() => openSubmenu(2)}
            />
             ) : (
           <FaRegPlusSquare
-          className=" cursor-pointer"
+          className="absolute top-[10px] right-[15px] cursor-pointer"
          onClick={() => openSubmenu(2)}
          />
            )}
@@ -183,11 +182,11 @@ const CategoryPanel = (props) => {
                     </Link>
                     {innerSubmenuIndex === 2 ? (
                     <FaRegSquareMinus
-                     className="cursor-pointer" onClick={() => openInnerSubmenu(2)}
+                     className="absolute top-[10px] right-[15px] cursor-pointer" onClick={() => openInnerSubmenu(2)}
                     />
                   ) : (
               <FaRegPlusSquare
-              className=" cursor-pointer"
+              className="absolute top-[10px] right-[15px] cursor-pointer"
               onClick={() => openInnerSubmenu(2)}
            />
            )}
@@ -227,12 +226,12 @@ const CategoryPanel = (props) => {
             </Link>
             {submenuIndex === 3 ? (
              <FaRegSquareMinus
-             className=" absolute top=[100%] left=[0%] cursor-pointer flex-col"
+             className=" absolute top-[10px] right-[15px] cursor-pointer flex-col"
             onClick={() => openSubmenu(3)}
            />
             ) : (
           <FaRegPlusSquare
-          className="absolute top=[100%] left=[0%] cursor-pointer"
+          className="absolute top-[10px] right-[15px] cursor-pointer"
          onClick={() => openSubmenu(3)}
          />
            )}
@@ -245,11 +244,11 @@ const CategoryPanel = (props) => {
                     </Link>
                     {innerSubmenuIndex === 3 ? (
                     <FaRegSquareMinus
-                     className="cursor-pointer justify-end" onClick={() => openInnerSubmenu(3)}
+                     className="absolute top-[10px] right-[15px] cursor-pointer justify-end" onClick={() => openInnerSubmenu(3)}
                     />
                   ) : (
               <FaRegPlusSquare
-              className=" cursor-pointer justify-end"
+              className="absolute top-[10px] right-[15px] cursor-pointer justify-end"
               onClick={() => openInnerSubmenu(3)}
            />
            )}
