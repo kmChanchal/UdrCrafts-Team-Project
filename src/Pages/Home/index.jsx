@@ -1,11 +1,25 @@
 import React from 'react'
+import HomeSlider from '../../components/HomeSlider'
+import HomeCatSlider from '../../components/HomeCatSlider'
 
-const index = () => {
+const Home = () => {
   return (
     <div>
-      
+      <HomeSlider />
+      <HomeCatSlider />
+       <br/>
+        <br/>
+         <br/>
+          <br/>
+           <br/>
+            <br/>
+             <br/>
+              <br/>
+               <br/> <br/>
+                <br/>
+                 <br/>
     </div>
   )
 }
 
-export default index
+export default Home

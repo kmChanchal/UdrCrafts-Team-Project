@@ -8,6 +8,7 @@ body{
   font-optical-sizing: auto;
   background: #f5f0f0;
   color: rgba(0, 0, 0,0.7);
+  
 }
 
 .container{
@@ -33,3 +34,40 @@ nav ul button{
 nav ul button .MuiTouchRipple-root ::before{
     background-color: rgba(0, 0, 0,0.1) !important;
 }
+.sliderHome {
+    overflow: inherit !important;
+     
+}
+.swiper-button-prev, .swiper-button-next{
+display:flex ; justify-content: center; align-items: center; background-color: white; width: 45px; height: 45px; min-width: 45px;}
+.swiper-button-prev::after, .swiper-button-next::after{
+    font-size: 20px !important ; color: black;
+
+}
+.homeCatSlider{
+    overflow: inherit !important;
+}
+.homeCatSlider .swiper-button-prev, .homeCatSlider .swiper-button-next{
+    width: 35px; height: 35px; min-width: 35px;}
+    .homeCatSlider .swiper-button-prev::after, .homeCatSlider .swiper-button-next::after{
+        font-size: 15px !important ;
+    
+    }
+    .homeCatSlider .swiper-button-prev{
+        left: 0px !important;
+    }
+    .homeCatSlider .swiper-button-next{
+        right: 0px !important;
+    }
+    .homeCatSlider.item{
+        border-radius: 1px;
+        solid :rgba(0, 0, 0,0.1);
+    }
+    .homeCatSlider.swiper-button-prev:hover,.homeCatSlider.homeCatSlider.swiper-button-prev:hover{
+        background-color: rgba(0, 0, 0,0.1) !important;
+    }
+    .homeCatSlider .swiper-button-prev:hover::after, .homeCatSlider .swiper-button-next::after{
+        color: rgba(0, 0, 0,0.7) !important;
+    
+    }
+    .homeCatSlider.item:hover img{transform:scale(1.1);}
