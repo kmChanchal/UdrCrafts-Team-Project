@@ -8,12 +8,12 @@ import { Navigation } from 'swiper/modules';
 
 const HomeCatSlider = () => {
   return (
-    <div className='HomeCatSlider'>
+    <div className='HomeCatSlider py-8 pt-4'>
       <div className='container'>
         <Swiper
-          slidesPerView={5}
+          slidesPerView={6}
           spaceBetween={10}
-          navigation={true}
+         
           modules={[Navigation]}
           className="mySwiper"
         >
@@ -21,7 +21,7 @@ const HomeCatSlider = () => {
             <SwiperSlide key={`slide-${index}`}>
               <Link to='/'>
                 <div className='item py-8 px-3 bg-white rounded-sm text-center flex flex-center items-center justify-center flex-col'>
-                  <img src="https://serviceapi.spicezgold.com/download/1741660988059_ele.png" className='w-[60px] transition-all'/>
+                  <img src="https://serviceapi.spicezgold.com/download/1755610847575_file_1734525204708_fash.png" className='w-[60px] transition-all'/>
                   <h3 className='text-[15px] font-[500] mt-3 '>Smart Tablet</h3>
                 </div>
               </Link>
