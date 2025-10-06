@@ -7,6 +7,17 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import ProductSlider from '../../components/ProductSlider';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import { Navigation } from 'swiper/modules';
+import BlogItem from '../../components/Blogitem';  // Added missing import
+import BlogList from '../../components/BlogList';
+import Footer from '../../components/Footer';
+ // Fixed import path for FooterSection
+ 
+
 const Home = () => {
  const [value, setValue] = React.useState(0);
 
@@ -14,6 +25,7 @@ const Home = () => {
     setValue(newValue);
   }; 
   return (
+    
     <div>
       <HomeSlider />
       <HomeCatSlider />
@@ -89,9 +101,16 @@ const Home = () => {
     <AdsBannerSlider items={3}/>
   </div>
 </section>
+<section className='py-5 pt-0 bg-white blogSection '>
+  <div className='container'>
+    <h2 className='text-[22px] font-[600] mb-4'>From The Blog</h2>
+    <BlogList />
+    <Footer/>
+  </div>
+</section>
 
+      
 
-       <br /><br /><br /><br /><br /><br />
     </div>
   )
 }
