@@ -14,6 +14,9 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import BlogItem from '../../components/Blogitem';  // Added missing import
 import BlogList from '../../components/BlogList';
+import Footer from '../../components/Footer';
+ // Fixed import path for FooterSection
+ 
 
 const Home = () => {
  const [value, setValue] = React.useState(0);
@@ -102,7 +105,7 @@ const Home = () => {
   <div className='container'>
     <h2 className='text-[22px] font-[600] mb-4'>From The Blog</h2>
     <BlogList />
-    
+    <Footer/>
   </div>
 </section>
 
