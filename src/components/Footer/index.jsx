@@ -38,7 +38,7 @@ const Footer = () => {
         <p className='text-[12px] font-[500]'>Contact us Anytime</p>
       </div>
     </div>
-    </div>
+    </div>    git commit -m "Initial commit"
     </footer>
     <footer className="bg-white border-t border-gray-200  ">
       <div className="container mx-auto py-10  footer-flex px-4  gap-2 pb-8">
