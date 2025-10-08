@@ -1,19 +1,47 @@
 import React from 'react';
 import { FaFacebookF, FaYoutube, FaPinterestP, FaInstagram, FaRegCommentDots } from 'react-icons/fa';
 import { SiVisa, SiMastercard, SiAmericanexpress, SiPaypal } from 'react-icons/si';
+import { LiaShippingFastSolid } from "react-icons/lia";
+import { PiKeyReturnBold } from "react-icons/pi";
+import { BsWallet2 } from "react-icons/bs";
+import { TfiGift } from "react-icons/tfi";
+import { BiSupport } from "react-icons/bi";
+
 
 const Footer = () => {
   return (
-    <footer className="py-6 bg-white>
+    <>
+    <footer className="py-6 bg-red-200">
     <div className="container">
     <div className="flex items-center justify-center gap-2">
-      <div className=''col flex items-center justify-center flex-col group w-[15%]'>
-      <LiaShoppingCartSolid className='text-[50px] transition-all duration-300 group-hover:text-primary group-hover:-translate-y-1'/>
+      <div className="col flex items-center justify-center flex-col group w-[15%]">
+      <LiaShippingFastSolid  className='text-[50px] transition-all duration-300 group-hover:text-red-600 group-hover:-translate-y-1'/>
+      <h3 className='text-[16px] font-[600]'>Free Shipping </h3>
+        <p className='text-[12px] font-[500]'>For all Orders Over $100</p>
+      </div>
+      <div className="col flex items-center justify-center flex-col group w-[15%]">
+      <PiKeyReturnBold   className='text-[50px] transition-all duration-300 group-hover:text-red-600 group-hover:-translate-y-1'/>
       <h3 className='text-[16px] font-[600] mt-3'>Free Shipping </h3>
         <p className='text-[12px] font-[500]'>For all Orders Over $100</p>
       </div>
-     
-        
+      <div className="col flex items-center justify-center flex-col group w-[15%]">
+      <BsWallet2  className='text-[50px] transition-all duration-300 group-hover:text-red-600 group-hover:-translate-y-1'/>
+      <h3 className='text-[16px] font-[600] mt-3'>Free Shipping </h3>
+        <p className='text-[12px] font-[500]'>For all Orders Over $100</p>
+      </div>
+      <div className="col flex items-center justify-center flex-col group w-[15%]">
+      <TfiGift  className='text-[50px] transition-all duration-300 group-hover:text-red-600 group-hover:-translate-y-1'/>
+      <h3 className='text-[16px] font-[600] mt-3'>Free Shipping </h3>
+        <p className='text-[12px] font-[500]'>For all Orders Over $100</p>
+      </div>
+      <div className="col flex items-center justify-center flex-col group w-[15%]">
+      <BiSupport  className='text-[50px] transition-all duration-300 group-hover:text-red-600 group-hover:-translate-y-1'/>
+      <h3 className='text-[16px] font-[600] mt-3'>Free Shipping </h3>
+        <p className='text-[12px] font-[500]'>For all Orders Over $100</p>
+      </div>
+    </div>
+    </div>
+    </footer>
     <footer className="bg-white border-t border-gray-200  ">
       <div className="container mx-auto py-10  footer-flex px-4  gap-2 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-4 border-b border-gray-300 pb-8">
@@ -97,7 +125,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-gray-500 text-sm mt-4 md:mt-0">
-            © 2024 - Ecommerce Template
+            © 2025 - Ecommerce Template
           </div>
 
           {/* Payment icons */}
@@ -110,6 +138,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 

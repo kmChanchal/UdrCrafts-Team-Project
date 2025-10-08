@@ -10,7 +10,7 @@ const BlogItem = ({ image, date, title, excerpt, link }) => {
         <p className='text-[12px] text-[#ff5252] font-[500] mb-1'>{date}</p>
         <h3 className='text-[18px] font-[600] mb-2'>{title}</h3>
         <p className='text-[14px] font-[400] mb-2'>{excerpt}</p>
-        <a href={link} className='text-[14px] font-[500] text-[#ff5252]'>Read More</a>
+        <span className='text-[14px] font-[500] text-[#ff5252] cursor-pointer'>Read More</span>
       </div>
     </a>
   )
