@@ -6,8 +6,6 @@ import { PiKeyReturnBold } from "react-icons/pi";
 import { BsWallet2 } from "react-icons/bs";
 import { TfiGift } from "react-icons/tfi";
 import { BiSupport } from "react-icons/bi";
-
-
 const Footer = () => {
   return (
     <>
@@ -21,23 +19,23 @@ const Footer = () => {
       </div>
       <div className="col flex items-center justify-center flex-col group w-[15%]">
       <PiKeyReturnBold   className='text-[50px] transition-all duration-300 group-hover:text-red-600 group-hover:-translate-y-1'/>
-      <h3 className='text-[16px] font-[600] mt-3'>Free Shipping </h3>
-        <p className='text-[12px] font-[500]'>For all Orders Over $100</p>
+      <h3 className='text-[16px] font-[600] mt-3'>30 Days Returns </h3>
+        <p className='text-[12px] font-[500]'>For an Exchange Product</p>
       </div>
       <div className="col flex items-center justify-center flex-col group w-[15%]">
       <BsWallet2  className='text-[50px] transition-all duration-300 group-hover:text-red-600 group-hover:-translate-y-1'/>
-      <h3 className='text-[16px] font-[600] mt-3'>Free Shipping </h3>
-        <p className='text-[12px] font-[500]'>For all Orders Over $100</p>
+      <h3 className='text-[16px] font-[600] mt-3'>Secured Payment </h3>
+        <p className='text-[12px] font-[500]'>Payment Cards Accepted</p>
       </div>
       <div className="col flex items-center justify-center flex-col group w-[15%]">
       <TfiGift  className='text-[50px] transition-all duration-300 group-hover:text-red-600 group-hover:-translate-y-1'/>
-      <h3 className='text-[16px] font-[600] mt-3'>Free Shipping </h3>
-        <p className='text-[12px] font-[500]'>For all Orders Over $100</p>
+      <h3 className='text-[16px] font-[600] mt-3'>Special Gifts </h3>
+        <p className='text-[12px] font-[500]'>Our First Product Order</p>
       </div>
       <div className="col flex items-center justify-center flex-col group w-[15%]">
       <BiSupport  className='text-[50px] transition-all duration-300 group-hover:text-red-600 group-hover:-translate-y-1'/>
-      <h3 className='text-[16px] font-[600] mt-3'>Free Shipping </h3>
-        <p className='text-[12px] font-[500]'>For all Orders Over $100</p>
+      <h3 className='text-[16px] font-[600] mt-3'>Support 24/7 </h3>
+        <p className='text-[12px] font-[500]'>Contact us Anytime</p>
       </div>
     </div>
     </div>
