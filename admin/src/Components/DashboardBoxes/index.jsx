@@ -23,7 +23,7 @@ const DashboardBoxes = () => {
         className="dashboardBoxesSlider"
       >
         <SwiperSlide>
-        <div className="box p-5 cursor-pointer hover:bg-[#f1f1f1] rounded-md border-1 border-[rgba(0,0,0,0.2)] flex items-center gap-4">
+        <div className="box p-5 cursor-pointer hover:bg-[#f1f1f1] bg-white rounded-md border-1 border-[rgba(0,0,0,0.2)] flex items-center gap-4">
         <HiGiftTop className="text-[40px] text-[#3872fa]" />
         <div className="info w-[70%] ">
             <h3>New Orders</h3>
@@ -33,7 +33,7 @@ const DashboardBoxes = () => {
         </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="box p-5 cursor-pointer hover:bg-[#f1f1f1] rounded-md border-1 border-[rgba(0,0,0,0.2)] flex items-center gap-4">
+        <div className="box p-5 cursor-pointer hover:bg-[#f1f1f1] bg-white rounded-md border-1 border-[rgba(0,0,0,0.2)] flex items-center gap-4">
         <FcDoughnutChart  className="text-[40px] text-[#10b981]" />
         <div className="info w-[70%] ">
             <h3>Sales</h3>
@@ -43,7 +43,7 @@ const DashboardBoxes = () => {
         </div>
         </SwiperSlide>
          <SwiperSlide>
-        <div className="box p-5 cursor-pointer hover:bg-[#f1f1f1] rounded-md border-1 border-[rgba(0,0,0,0.2)] flex items-center gap-4">
+        <div className="box p-5 cursor-pointer hover:bg-[#f1f1f1] bg-white rounded-md border-1 border-[rgba(0,0,0,0.2)] flex items-center gap-4">
         <GiBanknote  className="text-[50px] text-[#7928ca]" />
         <div className="info w-[70%] ">
             <h3>Revenue</h3>
@@ -53,7 +53,7 @@ const DashboardBoxes = () => {
         </div>
         </SwiperSlide>
          <SwiperSlide>
-        <div className="box p-5 cursor-pointer hover:bg-[#f1f1f1] rounded-md border-1 border-[rgba(0,0,0,0.2)] flex items-center gap-4">
+        <div className="box p-5 cursor-pointer hover:bg-[#f1f1f1] bg-white rounded-md border-1 border-[rgba(0,0,0,0.2)] flex items-center gap-4">
         <MdOutlineProductionQuantityLimits className="text-[40px] text-[#3872fa]" />
         <div className="info w-[70%] ">
             <h3>Total Products</h3>

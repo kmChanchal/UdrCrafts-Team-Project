@@ -5,3 +5,12 @@
 .ReactCollapse--collapse {
   transition: height 500ms;
 }
+.btn-blue{
+  background-color: #3872fa !important; color: #fff !important; padding: 8px 20px !important;
+}
+.btn-blue:hover{
+  background-color: #3067e5 !important;
+}
+body{
+  background-color: #f1f1f1;
+}
