@@ -7,6 +7,17 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import ProductSlider from '../../components/ProductSlider';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import { Navigation } from 'swiper/modules';
+import BlogItem from '../../components/Blogitem';  // Added missing import
+import BlogList from '../../components/BlogList';
+import Footer from '../../components/Footer';
+ // Fixed import path for FooterSection
+ 
+
 const Home = () => {
  const [value, setValue] = React.useState(0);
 
@@ -14,6 +25,7 @@ const Home = () => {
     setValue(newValue);
   }; 
   return (
+    
     <div>
       <HomeSlider />
       <HomeCatSlider />
@@ -49,13 +61,13 @@ const Home = () => {
           </div>
         </div>
 
-       <ProductSlider items={5} />
+       <ProductSlider items={6} />
 
 
         </div>
       </section>
 
-       <section className='py-16 bg-white  '>
+       <section className='py-4 pt-2 bg-white  '>
         <div className='container'> 
         <div className='freeShipping  py-4 p-4 border-2 border-[#ff5252] flex items-center justify-between rounded-md mb-7'> 
       <div className='col1 flex items-center gap-4'>
@@ -72,11 +84,33 @@ const Home = () => {
         </div>
 
         <AdsBannerSlider items={4}/>
+        
 
         </div>
        </section>
+<section className='py-5 pt-0 bg-white '>
+  <div className='container'>
+    <h2 className='text-[22px] font-[600]  '>Latest Products</h2>
+    <ProductSlider items={6} />
+  </div>
+</section>
 
-       <br /><br /><br /><br /><br /><br />
+<section className='py-5 pt-0 bg-white '>
+  <div className='container'>
+    <h2 className='text-[22px] font-[600]  '>Latest Products</h2>
+    <AdsBannerSlider items={3}/>
+  </div>
+</section>
+<section className='py-5 pt-0 bg-white blogSection '>
+  <div className='container'>
+    <h2 className='text-[22px] font-[600] mb-4'>From The Blog</h2>
+    <BlogList />
+    <Footer/>
+  </div>
+</section>
+
+      
+
     </div>
   )
 }
